@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- <link rel="stylesheet" href="css/js_test.css"> -->
+
+	<style type="text/css">
+		/*css选择器*/
+		#id_select{color: orange;}
+		.class_select{color: green;}
+		h4{color: blue;}
+		*{color: purple;}
+		.center{
+			color: #fff;
+			text-align: center;
+			line-height: 100px;
+			/*DIV水平垂直居中*/
+			background-color: #666;
+			border: 5px solid #000;
+			height: 100px;
+			width: 100px;
+			margin: auto;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
+		.title{
+			font-size: 25px;
+			color: #000;
+			font-weight: bold;
+		}
+		.paragraph{
+			margin-top: 15px;
+		}
+		.div_center button{
+			color: #000;
+			margin-top: 5px;
+		}
+		.sjlx-sysx{
+			margin-top: 5px;
+			border: 1px solid #000;
+			width: 700px;
+		}
+		.sjlx-sysx td{
+			font-size: 15px;
+			color: #000;
+			border: 1px solid #000;
+			padding: 1px 3px;
+			height: 28px;
+		}
+		.sjlx-sysx .sjlx-sysx-top{
+			font-size: 20px;
+			font-weight: bold;
+		}
+		#sjlx-sysx-top{
+			width: 180px;
+		}
+		.DOM{
+			margin-top: 5px;
+			border: 1px solid #000;
+			width: 700px;
+		}
+		.DOM td{
+			font-size: 20px;
+			color: #000;
+			font-weight: bold;
+			border: 1px solid #000;
+			padding: 1px 3px;
+			height: 28px;
+		}
+		#shuchu{
+			/*500*500的DIV*/
+			background-color: #000;
+			height: 500px;
+			width: 500px;
+			text-align: center;
+			line-height: 500px;
+			color: #fff;
+			font-size: 50px;
+		}
+		#shuru{
+			color: #666;
+			margin-bottom: 5px;
+			margin-top: 5px;
+		}
+	</style>
+
+</head>
+<body>
+	
+	<!-- css选择器有哪些？按照权重大小排列 -->
+	<div class="css_select">
+		<div class="title">一 css选择器有哪些</div>
+		<h1 style="color: red">1.内联样式</h1>
+		<h2 id="id_select">2.id选择器</h2>
+		<h3 class="class_select">3.类选择器</h3>
+		<h4>4.标签选择器</h4>
+		<h5>5.通配符选择器</h5>
+	</div>
+
+	<!-- 如何让一个DIV在页面中水平和垂直都居中？ -->
+	<div class="div_center">
+		<div class="title">二 DIV如何在页面中水平垂直居中</div>
+		<button onclick="close1()">隐藏DIV</button>
+		<button onclick="open1()">显示DIV</button>
+		<div class="center" id="hide">DIV</div>
+	</div>
+
+	<!-- 熟悉每个数据类型都有哪些私有属性 -->
+	<div class="sjlx_sysx paragraph">
+	 	<div class="title">三 数据类型有哪些私有属性</div>
+	 	<table class="sjlx-sysx">
+	 		<tr>
+	 			<td class="sjlx-sysx-top" id="sjlx-sysx-top">数据类型</td>
+	 			<td class="sjlx-sysx-top">私有属性</td>
+	 		</tr>
+	 		<tr>
+	 			<td rowspan="9">Array数组类型</td>
+	 			<td>push()：向数组的末尾添加新的元素</td>
+	 		</tr>
+	 		<tr><td>concat()：合并两个数组或个数组</td></tr>
+	 		<tr><td>pop()：删除数组的最后一个元素</td></tr>
+	 		<tr><td>reverse()：反转数组</td></tr>
+	 		<tr><td>
+	 			sort()：字母顺序排列数组<br>
+	 			sort(function(a,b){return a-b})：数字逆序排列数组<br>
+	 			sort(function(a,b){return b-a})：数字逆序排列数组
+	 		</td></tr>
+	 		<tr><td>slice()：选择数组中的第到y个元素</td></tr>
+	 		<tr><td>splice()：在数组中指定位置添加新的元素</td></tr>
+	 		<tr><td>unshift()：在数组开头添加新元素</td></tr>
+	 		<tr><td>shift()：删除数组的第一个元素</td></tr>
+	 		<tr>
+	 			<td rowspan="2">Number数字类型</td>
+	 			<td>toFixed()：把数字转换为字符串，结果的小数点后有指定位数的数字</td>
+	 		</tr>
+	 		<tr><td>toPrecision()：把数字格式化为指定的长度</td></tr>
+	 		<tr>
+	 			<td rowspan="11">String字符串类型</td>
+	 			<td>charAt()：返回指定位置的字符</td>
+	 		</tr>
+	 		<tr><td>concat()：连接两个字符串或多个字符串</td></tr>
+	 		<tr><td>match()：查找找到一个或多个正则表达式的匹配</td></tr>
+	 		<tr><td>replace()：在字符串中查找匹配的子串，并替换与正则表达式匹配的子串</td></tr>
+	 		<tr><td>search()：查找与正则表达式相匹配的值</td></tr>
+	 		<tr><td>slice()：提取字符串的片断，并在新的字符串中返回被提取的部分</td></tr>
+	 		<tr><td>split()：把字符串分割为字符串数组</td></tr>
+	 		<tr><td>toLowerCase()：把字符串转换为小写</td></tr>
+	 		<tr><td>toUpperCase()：把字符串转换为大写</td></tr>
+	 		<tr><td>trim()：去除字符串两边的空白</td></tr>
+	 		<tr><td>toString()：返回一个字符串</td></tr>
+	 		<tr>
+	 			<td rowspan="5">Date日期与时间类型</td>
+	 			<td>getFullYear()：从Date对象以四位数字返回年份</td>
+	 		</tr>
+	 		<tr><td>getDay()：从Date对象返回一周中的某一天(0 ~ 6)</td></tr>
+	 		<tr><td>getDate()：从Date对象返回一个月中的某一天(1 ~ 31)</td></tr>
+	 		<tr><td>getTime()：返回1970年1月1日至今的毫秒数</td></tr>
+	 		<tr><td>toUTCString()：把Date对象的日期部分转换为字符串</td></tr>
+	 		<tr>
+	 			<td rowspan="4">Math算术类型</td>
+	 			<td>round()：对一个数字四舍五入</td>
+	 		</tr>
+	 		<tr><td>
+	 		    random()：返回0-1之间的一个随机数<br>
+	 		    random()*x：返回0-x之间的一个随机数
+	 		</td></tr>
+	 		<tr><td>max()：返回给定数中最大的数</td></tr>
+	 		<tr><td>min()：返回给定数中最小的数</td></tr>
+	 		<tr>
+	 			<td rowspan="4">RegExp正则表达式类型</td>
+	 			<td>/搜索内容/i：不区分大小写匹配</td>
+	 		</tr>
+	 		<tr><td>/搜索内容/g：全文搜索，找到所有匹配内容</td></tr>
+	 		<tr><td>test()：搜索字符串指定的值，根据结果并返回真或假</td></tr>
+	 		<tr><td>exec()：检索字符串中的指定值，返回值是被找到的值，如果没有发现匹配，则返回null</td></tr>
+	 	</table>	
+	</div>
+
+	<!-- js获取DOM元素有哪些方法？ -->
+	<div class="dom paragraph">
+		<div class="title">四 获取DOM元素有哪些方法</div>
+		<table class="DOM">
+			<tr>
+				<td>通过 id 查找 HTML 元素</td>
+				<td>document.getElementById()</td>
+			</tr>
+			<tr>
+				<td>通过标签名查找 HTML 元素</td>
+				<td>document.getElementsByTagName()</td>
+			</tr>
+			<tr>
+				<td>通过类名找到 HTML 元素</td>
+				<td>document.getElementsByClassName()</td>
+			</tr>
+		</table>
+	</div>
+
+	<!-- 在页面中创建一个div（500px*500px） 和 Input； 实时获取Input输入的值展示在div中；
+		【如果input输入值长度大于3就使div的背景颜色变为红色】。（onchange   innerText   length） -->
+	<div class="div_input paragraph">
+		<div class="title">
+			五 在页面中创建一个div（500px*500px） 和 Input； <br>
+			实时获取Input输入的值展示在div中；<br>
+			【如果input输入值长度大于3就使div的背景颜色变为红色】</div>
+		<input type="text" value="请输入内容：" id="shuru"
+		 onchange="on_change()" onfocus="on_focus()">
+		<div id="shuchu"></div>
+	</div>
+
+	<script type="text/javascript">
+		DIV = document.getElementById('hide')
+		function close1() {
+			DIV.style.visibility = 'hidden'
+		}
+		function open1() {
+			DIV.style.visibility = 'visible'
+		}
+		var x = document.getElementById('shuru')
+		var y = document.getElementById('shuchu')
+		function on_focus() {
+			x.value = ""
+		}
+		// 在页面中创建一个div（500px*500px） 和 Input；...
+		function on_change() {
+			y.innerHTML = x.value
+			if (y.innerHTML.length > 3) {
+				y.style.background = "red"
+			}
+			else{
+				y.style.background = "#000"
+			}
+		}
+	</script>
+
+	<!-- <script type="text/javascript" src="js/js_test.js"></script> -->
+
+</body>
+</html>
