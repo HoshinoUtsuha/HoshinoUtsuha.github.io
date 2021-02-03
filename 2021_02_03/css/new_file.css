@@ -1,0 +1,101 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+#div1{
+	width: 36.04cm;
+	height: 15.45cm;
+	background: url(../img/register_bg.png) no-repeat center;
+	margin: auto;
+	padding-top: 0.6cm;
+}
+#div2{
+	height: 14cm;
+	width: 23cm;
+	background-color: #fff;
+	margin: auto;
+	padding: 0.6cm 0.3cm 0 0.5cm;
+	border: 0.2cm solid #eee;
+}
+
+#div_left{
+	float: left; /* float————即上浮,强制让任何元素左/右上浮 */
+	font-size: 17px;
+}
+#div_left1{
+	color: #ffcd26;
+}
+#div_left2{
+	color: #a6a6a6;
+}
+
+#div_center{
+	float: left;
+	margin-left: 2.5cm;
+	margin-top: 0.4cm;
+	font-size: 12px;
+}
+.td_left{
+	color: #656565;
+	text-align: right;
+	padding-right: 1cm;
+	line-height: 0.5cm;
+}
+.td_right{
+	
+}
+.username_to_birthday{
+	height: 0.8cm;
+	width: 6.8cm;
+	padding-left: 0.3cm;
+}
+.username_to_birthday::placeholder{ /* input::placeholder————伪类选择器,设置placeholder属性 */
+	color: #c9c9c9;
+	font-size: 10px;
+	
+}
+#checkcode{
+	height: 0.8cm;
+	width: 3.1cm;
+}
+.username_to_birthday,#checkcode{
+	border: 1px solid #c9c9c9;
+	border-radius: 3px;
+}
+#checkcode_img{
+	height: 0.85cm;
+	width: 2.8cm;
+	margin-left: 0.4cm;
+	vertical-align: middle; /* 通过vertical-align:middle实现CSS垂直居中是最常使用的方法，但是有一点需要格外注意，vertical生效的前提是元素的display：inline-block */
+}
+#submit{
+	height: 1cm;
+	width: 3.2cm;
+	background-color: #ffde65;
+	border: none;
+}
+#t1 td{
+	padding-bottom: 0.4cm;
+}
+
+#div_right{
+	float: right;
+	font-size: 12px;
+}
+#div_right a{
+	text-decoration: none;
+}
+#div_right a:hover{
+	color: red;
+}
+#div_right a:link{
+	color: yellow;
+}
+#div_right a:visited{
+	color: #fc8989;
+}
+#div_right a:active{
+	color: purple;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>2021_02_03_CSS练习</title>
+		<link rel="stylesheet" href="css/new_file.css">
+	</head>
+	<body>
+		<div id="div1">
+			<div id="div2">
+				<div id="div_left">
+					<p id="div_left1">新用户注册</p>
+					<p id="div_left2">USER REGISTER</p>
+				</div>
+				<div id="div_center">
+					<form action="#" method="get">
+						<table id="t1">
+							<tr>
+								<td class="td_left">
+									<label for="username">用户名</label>
+								</td>
+								<td class="td_right">
+									<!-- name：提供的数据种类 -->
+									<input type="text" name="username" id="username" class="username_to_birthday" placeholder="请输入账号">
+								</td>
+							</tr>
+							<tr>
+								<td class="td_left">
+									<label for="passwd">密码</label>
+								</td>
+								<td class="td_right">
+									<input type="password" name="passwd" id="passwd" class="username_to_birthday" placeholder="请输入密码">
+								</td>
+							</tr>
+							<tr>
+								<td class="td_left">
+									<label for="email">Email</label>
+								</td>
+								<td class="td_right">
+									<input type="email" name="email"  id="email" class="username_to_birthday" placeholder="请输入Email">
+								</td>
+							</tr>
+							<tr>
+								<td class="td_left">
+									<label for="name">姓名</label>
+								</td>
+								<td class="td_right">
+									<input type="text" name="name" id="name" class="username_to_birthday" placeholder="请输入真实姓名">
+								</td>
+							</tr>
+							<tr>
+								<td class="td_left">
+									<label for="tel">手机号</label>
+								</td>
+								<td class="td_right">
+									<input type="tel" name="tel" id="tel" class="username_to_birthday" placeholder="请输入您的手机号">
+								</td>
+							</tr>
+							<tr>
+								<td class="td_left">
+									<label>性别</label>
+								</td>
+								<td class="td_right">
+									<!-- value：提供的数据名 -->
+									<input type="radio" name="gender" id="male" value="male" checked>
+									<label for="male">男</label>
+									<input type="radio" name="gender" id="female" value="female">
+									<label for="female">女</label>
+								</td>
+							</tr>
+							<tr>
+								<td class="td_left">
+									<label for="birthday">出生日期</label>
+								</td>
+								<td class="td_right">
+									<input type="date" name="birthday" id="birthday" class="username_to_birthday">
+								</td>
+							</tr>
+							<tr>
+								<td class="td_left">
+									<label for="checkcode">验证码</label>
+								</td>
+								<td class="td_right">
+									<input type="text" name="checkcode" id="checkcode">
+									<img id="checkcode_img" src="img/verify_code.jpg">
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>
+									<input type="submit" id="submit" value="注册">
+								</td>
+							</tr>
+						</table>
+					</form>
+				</div>
+				<div id="div_right">
+					<p>已有账号？
+						<a href="#">立即登录</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
