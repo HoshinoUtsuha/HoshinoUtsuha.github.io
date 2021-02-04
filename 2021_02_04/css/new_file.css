@@ -1,0 +1,288 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	width: 1000px;
+	margin: auto;
+	background-color: #FFE2BC;
+}
+
+/* header */
+#div1{
+	height: 8px;
+	background-color: #757575;
+}
+#div2{
+	height: 53px;
+	background-color: #FFB657;
+}
+#key{
+	height: 22px;
+	width: 177px;
+	background-color: #FFE2BC;
+	border: 1px solid #FFAB27;
+	border-radius: 10px;
+	font-size: 14px; 
+	color: #FFAB27;
+	margin-top: 11px;
+	margin-left: 43px;
+}
+#key span{
+	letter-spacing: 18px; /* letter-spacing:调整字间距,由于会影响最后一个字多空一段,因此只调整前面的字 */
+}
+#search{
+	height: 24px;
+	width: 140px;
+	float: right;
+	margin-right: 30px;
+	margin-top: 11px;
+	background-color: #fff;
+	border-radius: 3px;
+}
+#search img{
+	height: 18px;
+	width: 18px;
+	margin-left: 6px;
+	position: relative;
+	top: 3.5px;
+}
+#search_box{
+	height: 20px;
+	width: 108px;
+	border: none;
+}
+#search_box::placeholder{
+	color: #E5E5E5;
+	font-size: 16px
+}
+#tool{
+	float: right;
+	margin-right: 30px;
+	margin-top: 5px;
+}
+#sign_in,#language{
+	display: block;
+	height: 17px;
+	width: 70px;
+	font-size: 12px;
+	background-color: #fff;
+	color: #FFB657;
+	text-decoration: none;
+	border-radius: 3px;
+}
+#sign_in img{
+	height: 14px;
+	width: 8px;
+	margin-left: 6px;
+	position: relative; /* position: relative:相对定位,后通过控制top/bottom/left/right使元素相对原位置移动 */
+	top: 3.5px;
+}
+#language{
+	text-align: center;
+	border: none;
+	margin-top: 8px;
+}
+#div3{
+	height: 27px;
+	background-color: orange;
+}
+
+/* banner */
+#banner{
+	height: 630px;
+}
+#banner_pic{
+	display: block;
+	margin-top: 40px;
+}
+#jt1 img,#jt2 img{
+	height: 75px;
+	width: 50px;
+}
+#jt1{
+	position: relative;
+	bottom: 330px;
+	left: 22px;
+}
+#jt2{
+	position: relative;
+	bottom: 330px;
+	left: 875px;
+}
+#three_btn{
+	text-align: center;
+	position: relative;
+	bottom: 70px;
+}
+#three_btn img{
+	height: 23px;
+	width: 23px;
+}
+#three_btn button{
+	margin: 0 10px;
+}
+#jt1,#jt2,#three_btn button{
+	background: none;
+	border: none;
+}
+
+/* recommend */
+#recommend{
+	display: block;
+	height: 1618px;
+	background: url(../img/bj.png) no-repeat center;
+}
+#blank1{
+	height: 155px;
+}
+#pz{
+	height: 544px;
+	background: url(../img/tuan_pz.png) no-repeat center;
+}
+#pz_p{
+	display: inline-block;
+	width: 180px;
+	margin-left: 410px;
+	padding-top: 90px;
+	font-size: 22px;
+	font-family: "黑体";
+}
+.pz_p1{
+	margin-bottom: 37px;
+	color: #FE620F;
+}
+#pz_p2{
+	text-align: right;
+	margin-top: -10px;
+}
+#pz_p2 a{
+	text-decoration: none;
+}
+#pz_p2 a:hover{
+	color: orange;
+}
+#pz_p2 a:link{
+	color: #FE8849;
+}
+#pz_p2 a:visited{
+	color: #FE8849;
+}
+#pz button{
+	height: 370px;
+	width: 330px;
+	background: none;
+	border: none;
+	float: right;
+	margin-right: 50px;
+	margin-top: 60px;
+}
+#pz img{
+	height: 100%;
+	width: 100%;
+}
+#umi{
+	height: 568px;
+	background: url(../img/tuan_umi.png) no-repeat center;
+	margin-top: -55px;
+}
+#umi_p{
+	display: inline-block;
+	width: 180px;
+	margin-right: 240px;
+	padding-top: 285px;
+	font-size: 22px;
+	font-family: "黑体";
+	float: right;
+}
+.umi_p1{
+	margin-bottom: 37px;
+	color: #FFFFCC;
+}
+#umi_p2{
+	text-align: right;
+	margin-top: -10px;
+}
+#umi_p2 a{
+	text-decoration: none;
+}
+#umi_p2 a:hover{
+	color: #FFFFCC;
+}
+#umi_p2 a:link{
+	color: #FFFFCC;
+}
+#umi_p2 a:visited{
+	color: #FFFFFF;
+}
+#umi button{
+	height: 366px;
+	width: 360px;
+	background: none;
+	border: none;
+	margin-left: 65px;
+	margin-top: -20px;
+}
+#umi img{
+	height: 100%;
+	width: 100%;
+}	
+
+/* qa */
+#djt{
+	margin-top: -500px;
+}
+#qa_p{
+	margin-left: 75px;
+	margin-top: -230px;
+	color: #FF9913;
+}
+#qa_chi{
+	font-size: 35px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+#qa_eng{
+	font-weight: 500;
+	font-size: 25px;
+}
+#qa_bg{
+	height: 568px;
+	background: url(../img/qa.png) no-repeat center;
+	margin-top: 20px
+}
+
+/* footer */
+#footer{
+	height: 150px;
+	background-color: #FFB657;
+}
+#zfb{
+	height: 60px;
+	width: 146px;
+	float: right;
+	background-color: #fff;
+	text-align: center;
+	border-radius: 5px;
+	margin-right: 40px;
+	margin-top: 75px;
+}
+#zfb_pic{
+	margin: 10px;
+}
+#wx{
+	height: 60px;
+	width: 146px;
+	float: right;
+	background-color: #fff;
+	text-align: center;
+	border-radius: 5px;
+	margin-right: 20px;
+	margin-top: 75px;
+}
+#wx_pic{
+	height: 32px;
+	width: 117px;
+	margin-top: 15px;
+}
