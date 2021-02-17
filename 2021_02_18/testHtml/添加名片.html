@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>添加名片代码</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	</head>
+	<body>
+		<div id="wbg">
+			<form id="addForm">
+				<div class="input">
+					姓名：<input type="text" class="texts" id="aname" placeholder="请输入姓名..." /> <!-- placeholder: 提示内容 -->
+				</div>
+				<div class="input">
+					手机号：<input type="text" class="texts" id="atel" placeholder="请输入手机号..." />
+				</div>
+				<div class="input">
+					QQ号：<input type="text" class="texts" id="aqq" placeholder="请输入QQ号..." />
+				</div>
+				<div class="input">
+					职位：<select id="position">
+					<option value="-1">请选择...</option>
+					<option value="教师">教师</option>
+					<option value="学生">学生</option>
+				</select></div>
+				<div id="remind"></div>
+				<input type="button" id="submit" value="提交" />
+				<input type="button" id="back" value="返回" />
+			</form>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var cards = [];
+	</script>
+	<!-- jquery -->
+	<script src="js/jquery-3.5.1.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/homePage.js" type="text/javascript" charset="utf-8"></script>
+</html>

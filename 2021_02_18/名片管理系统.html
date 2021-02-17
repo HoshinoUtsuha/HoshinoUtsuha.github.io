@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>名片管理系统</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	</head>
+	<body>
+		<div id="wbg">
+			<div id="title1">
+				<span>名</span>
+				<span>片</span>
+				<span>管</span>
+				<span>理</span>
+				<span>系</span>
+				<span>统</span>
+			</div>
+			<div id="title2">html + css + js&jquery</div>
+			<form id="form" action="#" method="get">
+				<div id="title3">———— 请选择模式 ————</div>
+				<div id="btns">
+					<input type="button" class="btn" id="addCard" value="添加名片">
+					<input type="button" class="btn" id="showCard" value="查看名片">
+					<input type="button" class="btn" id="queryCard" value="查询名片">
+					<input type="button" class="btn" id="deleteCard" value="删除名片">
+				</div>
+			</form>
+		</div>
+	</body>
+	<!-- jquery -->
+	<script type="text/javascript">
+		var cards = [];
+		/* 文字变色 */
+		setInterval(function () {
+			$("#title1,#title2,#title3").css("color","blue");
+		},1000);
+		setInterval(function () {
+			$("#title1,#title2,#title3").css("color","red");
+		},2000);
+	</script>
+	<script src="js/jquery-3.5.1.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/homePage.js" type="text/javascript" charset="utf-8"></script>
+</html>
